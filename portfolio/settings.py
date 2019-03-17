@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'ap*s2%_8ysj5tjb-0vb6nku28#nr+mnr*mex#bej_4rmlwd1^5'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = []
 
@@ -56,7 +56,7 @@ ROOT_URLCONF = 'portfolio.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'portfolio/templates/')],
+        'DIRS': ['portfolio/templates/portfolio'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
